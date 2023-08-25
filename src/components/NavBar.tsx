@@ -9,8 +9,8 @@ import SwichColor from './SwichColor'
 const NavBar = () => {
   return (
     <HStack justifyContent={'space-between'} p={'10px'}>
+        <Text fontWeight={"extrabold"} fontSize={"3xl"}>Groot Game</Text>
         <Image src={logo} h={"80px"} w={"auto"}></Image>
-        <Text>Groot Game</Text>
         <SwichColor />
     </HStack>
   )
