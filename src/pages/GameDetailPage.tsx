@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useGame from "../hooks/useGame";
 import { Heading, Spinner, Text } from "@chakra-ui/react";
 import GameAttributes from "../components/GameAttributes";
+import GameTrailer from "../components/GameTrailer";
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -16,6 +17,7 @@ const GameDetailPage = () => {
       <Heading>{game.name}</Heading>
       <Text>{game.description_raw}</Text>
       <GameAttributes game={game}/>
+      <GameTrailer gameid={game.id}/>
     </>
   );
 };
